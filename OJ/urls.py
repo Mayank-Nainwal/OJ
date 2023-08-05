@@ -23,5 +23,6 @@ admin.site.index_title = "Welcome to OJ"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("" , include("User.urls"))
+    path('' , include("User.urls")),
+    path('' , include("Problem.urls"))
 ]
